@@ -1,0 +1,41 @@
+html,body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background-color:#eee;
+  }
+
+#module{
+  position:fixed;
+  left:50%;
+  top:50%;
+  z-index:500;
+  width:380px;
+  height:300px;
+  background:url(../img/animationCube.png) no-repeat center 0px;
+  margin-left:-190px;
+  margin-top:-150px;
+  }
+  
+#page0,#page1,#page2,#page3{
+  position:fixed;
+  left:50%;
+  top:50%;
+  }
+
+.background{
+  position:absolute;
+  left:-1000px;
+  top:-600px;
+  height:1200px;
+  width:2000px;
+  background:url(../img/page0.gif) repeat center center;
+  overflow:hidden;
+  }
+  
+#page1 .background{background-image:url(../img/page1.gif);}
+#page2 .background{background-image:url(../img/page2.gif);}
+#page3 .background{background-image:url(../img/page3.gif);}
+
+.background .centre{position:absolute;left:1000px;}
+.background .centre img{display:block;position:absolute;}
